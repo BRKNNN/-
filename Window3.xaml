@@ -1,0 +1,22 @@
+﻿<Window x:Class="авторизация_и_регистрация_буркин.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:авторизация_и_регистрация_буркин"
+        mc:Ignorable="d"
+        Title="Window3" Height="700" Width="800">
+    <Grid>
+        <Image Margin="230,0,226,0" Source="Image8.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="250,49,0,0" Height="41" Width="220" FontSize="24"><Run FontWeight="Bold" Text="Верхняя одежда "/></TextBlock>
+        <Image Margin="484,49,269,584" Source="Image9.png" Stretch="Fill"/>
+        <Button Background="Transparent" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="484,49,0,0" Height="36" Click="Button_Click" RenderTransformOrigin="0.424,0.488" BorderThickness="0"/>
+        <Button Background="Transparent" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Margin="523,49,0,0" Height="36" BorderThickness="0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="313" Margin="241,123,0,0" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="TextBox_SearchLine" VerticalAlignment="Top" TextChanged="TextBox_SearchLine_TextChanged" PreviewKeyDown="TextBox_SearchLine_KeyDown" />
+        <StackPanel HorizontalAlignment="Left" Height="23" Margin="241,123,0,0" VerticalAlignment="Top" Width="313"/>
+
+
+
+    </Grid>
+</Window>
