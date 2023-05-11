@@ -1,0 +1,19 @@
+﻿<Window x:Class="авторизация_и_регистрация_буркин.Window6"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:авторизация_и_регистрация_буркин"
+        mc:Ignorable="d"
+        Title="Window6" Height="450" Width="800">
+    <Grid>
+        <Image Margin="60,0,451,189" Source="Image15.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="60,235,0,0" TextWrapping="Wrap" Text="Зип-худи" VerticalAlignment="Top" Width="102" FontSize="22" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="60,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontWeight="Bold" FontSize="24"><Run Text="Цена: "/><Run Text="26690"/><Run Text="₽"/></TextBlock>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Height="67" Margin="21,342,0,0" VerticalAlignment="Top" Width="217" Background="#FF020202" Foreground="White" ForceCursor="True" FontWeight="Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="467" Margin="435,10,0,-58" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" FontSize="16" FontWeight="Bold"><Run Text="Описание"/><Run Text=":"/><LineBreak/><Run FontWeight="Normal" FontSize="14" Text="Черное зип худи на молнии подходит невысоким и высоким парням и девушкам. Зипка оверсайз рекомендуется на любой возраст для женщин, девушек, довочек, парней, мальчиков, мужчин. Zip худи мужское отлично подойдет для бега, офиса, тренировок, занятий спортом, йогой, танцами или просто для повседневного ношения. Зип худи с начесом подойдут для прогулок с друзьями. Зип худи на молнии также будет комфортна для ношения дома. Толстовка на молнии послужит отличным дополнением для вашего гардероба. Худи oversize плюшевое будет самым желанным теплым подарком на новый год! Толстовка женская свободного кроя хорошо будет смотреться с джинсами. В самый твой плохой и холодный день тебя сможет согреть только наша теплая кофта с капюшоном теплое. Зип кофта с начесом сделана из натурального дышащего материала."/></TextBlock>
+        <Image Margin="0,0,747,383" Source="Image19.png" Stretch="Fill"/>
+        <Button Content="" HorizontalAlignment="Left" Height="41" Margin="0,-5,0,383" VerticalAlignment="Bottom" Width="45" Background="Transparent" Click="Button_Click" BorderThickness="0"/>
+
+    </Grid>
+</Window>

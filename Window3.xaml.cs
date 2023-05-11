@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace авторизация_и_регистрация_буркин
 {
@@ -37,6 +39,41 @@ namespace авторизация_и_регистрация_буркин
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window4 frm = new Window4();
+            frm.Show();
+            Close();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window5 frm = new Window5();
+            frm.Show();
+            Close();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Window6 frm = new Window6();
+            frm.Show();
+            Close();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Window7 frm = new Window7();
+            frm.Show();
+            Close();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            Window8 frm = new Window8();
+            frm.Show();
+            Close();
         }
     }
 }

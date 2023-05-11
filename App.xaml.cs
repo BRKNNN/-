@@ -13,5 +13,6 @@ namespace авторизация_и_регистрация_буркин
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }

@@ -11,7 +11,7 @@
             <ColumnDefinition Width="573*"/>
             <ColumnDefinition Width="227*"/>
         </Grid.ColumnDefinitions>
-        <PasswordBox HorizontalAlignment="Left" Margin="241,240,0,0" VerticalAlignment="Top" Width="292" Height="51" Password="131234345657&#xD;&#xA;"/>
+        <PasswordBox x:Name="passbox" HorizontalAlignment="Left" Margin="241,240,0,0" VerticalAlignment="Top" Width="292" Height="51"/>
         <Button Content="Авторизироваться" Width="287" Height="44"
                 VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="1,1" Margin="240,384,0,0" Click="Button_Click_1" FontSize="16" FontWeight="Bold" BorderThickness="0" ClipToBounds="True" FontFamily="Yu Gothic UI Semibold" AutomationProperties.IsOffscreenBehavior="FromClip" Background="Black" Foreground="White" ForceCursor="True" Uid="black">
             <Button.BindingGroup>
@@ -29,11 +29,29 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="241,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" TextChanged="TextBox_TextChanged_2" Text=" "/>
+
+        <Button Content="Авторизироваться как администратор" Width="295" Height="44"
+                VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="1,1" Margin="240,430,0,0" Click="Button_Click_2" FontSize="16" FontWeight="Bold" BorderThickness="0" ClipToBounds="True" FontFamily="Yu Gothic UI Semibold" AutomationProperties.IsOffscreenBehavior="FromClip" Background="White" Foreground="Black" ForceCursor="True" Uid="black">
+            <Button.BindingGroup>
+                <BindingGroup/>
+            </Button.BindingGroup>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="360.029"/>
+                    <TranslateTransform X="-0.011117" Y="-0.071875"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="emailbox" HorizontalAlignment="Left" Height="43" Margin="241,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="292" TextChanged="TextBox_TextChanged_2" Text=" "/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="241,317,0,0" Width="134" TextDecorations="Underline"><Run FontWeight="Bold" Text="Забыли пароль?"/></TextBlock>
         <Image Margin="285,49,102,314" Source="Image5.png" Stretch="Fill" RenderTransformOrigin="0.522,0.39"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Введите пароль" VerticalAlignment="Top" Width="144" Margin="241,217,0,0" BorderThickness="0" TextChanged="TextBox_TextChanged_3" FontWeight="Bold" Opacity="0.6"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="241,149,0,0" TextWrapping="Wrap" Text="Введите email" VerticalAlignment="Top" Width="120" BorderThickness="0" FontWeight="Bold" Opacity="0.6"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="241,149,0,0" TextWrapping="Wrap" Text="Введите номер" VerticalAlignment="Top" Width="120" BorderThickness="0" FontWeight="Bold" Opacity="0.6"/>
 
 
 

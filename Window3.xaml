@@ -6,15 +6,33 @@
         xmlns:local="clr-namespace:авторизация_и_регистрация_буркин"
         mc:Ignorable="d"
         Title="Window3" Height="700" Width="800">
-    <Grid>
-        <Image Margin="230,0,226,0" Source="Image8.png" Stretch="Fill"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="250,49,0,0" Height="41" Width="220" FontSize="24"><Run FontWeight="Bold" Text="Верхняя одежда "/></TextBlock>
+    <Grid Margin="1,0,-8,3">
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="250,49,0,0" Height="41" Width="220" FontSize="24"><Run FontWeight="Bold" Text="Главная "/><Run FontWeight="Bold" Text=" "/></TextBlock>
         <Image Margin="484,49,269,584" Source="Image9.png" Stretch="Fill"/>
         <Button Background="Transparent" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="484,49,0,0" Height="36" Click="Button_Click" RenderTransformOrigin="0.424,0.488" BorderThickness="0"/>
         <Button Background="Transparent" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="43" Margin="523,49,0,0" Height="36" BorderThickness="0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="313" Margin="241,123,0,0" TextChanged="TextBox_TextChanged"/>
-        <TextBox x:Name="TextBox_SearchLine" VerticalAlignment="Top" TextChanged="TextBox_SearchLine_TextChanged" PreviewKeyDown="TextBox_SearchLine_KeyDown" />
-        <StackPanel HorizontalAlignment="Left" Height="23" Margin="241,123,0,0" VerticalAlignment="Top" Width="313"/>
+        <ListBox HorizontalAlignment="Left" Height="22" Margin="243,124,0,0" VerticalAlignment="Top" Width="308"/>
+        <TextBlock HorizontalAlignment="Left" Margin="250,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="104" FontSize="20" FontWeight="Bold"><Run Text="Категория "/><Run Text="k"/></TextBlock>
+        <Button Content="Всё " HorizontalAlignment="Left" Margin="250,196,0,0" VerticalAlignment="Top" Width="90" Height="27" FontWeight="Bold" FontSize="16" BorderThickness="0"/>
+        <Button Content="Футболки" HorizontalAlignment="Left" Margin="351,196,0,0" VerticalAlignment="Top" Width="104" Height="27" Background="White" BorderThickness="0,0.3,0.3,0.3" FontWeight="Bold" FontSize="14" Click="Button_Click_5"/>
+        <Button Content="Обувь" HorizontalAlignment="Left" Height="24" Margin="460,199,0,0" VerticalAlignment="Top" Width="98" BorderThickness="0" Background="#FFFFFBFB" FontSize="14" FontWeight="Bold"/>
+        <Image Margin="250,252,404.3,298" Source="Image11.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Белая футболка" VerticalAlignment="Top" Margin="250,371,0,0" Width="130" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="250,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90"><Run Text=" "/><Run FontWeight="Bold" Text="1090₽"/></TextBlock>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Height="23" Margin="256,418,0,0" VerticalAlignment="Top" Width="131" Background="#FF020202" Foreground="White" ForceCursor="True" FontWeight="Bold" Click="Button_Click_1"/>
+        <Image Margin="407,252,248,298" Source="Image12.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="416,371,0,0" TextWrapping="Wrap" Text="Платье " VerticalAlignment="Top" Width="95" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="416,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontWeight="Bold"><Run Text="2799"/><Run Text="₽"/></TextBlock>
+        <Button Content="Добавить к корзину " HorizontalAlignment="Left" Height="23" Margin="416,418,0,0" VerticalAlignment="Top" Width="129" FontWeight="Bold" Background="Black" Foreground="White" Click="Button_Click_2"/>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Height="23" Margin="256,627,0,0" VerticalAlignment="Top" Width="131" Background="#FF020202" Foreground="White" ForceCursor="True" FontWeight="Bold" Click="Button_Click_3"/>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Height="23" Margin="416,627,0,0" VerticalAlignment="Top" Width="129" Background="#FF020202" Foreground="White" ForceCursor="True" FontWeight="Bold" Click="Button_Click_4"/>
+        <Image Margin="243,459,405,89" Source="Image15.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="250,582,0,0" TextWrapping="Wrap" Text="Зип-худи" VerticalAlignment="Top" Width="117" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="256,611,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" FontWeight="Bold"><Run Text="26690"/><Run Text="₽"/></TextBlock>
+        <Image Margin="408,459,241,89" Source="Image16.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="416,582,0,0" TextWrapping="Wrap" Text="Джинсы" VerticalAlignment="Top" Width="86" FontWeight="Bold" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="416,611,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78" FontWeight="Bold"><Run Text="5589"/><Run Text="₽"/></TextBlock>
+
 
 
 

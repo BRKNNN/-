@@ -1,0 +1,19 @@
+﻿<Window x:Class="авторизация_и_регистрация_буркин.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:авторизация_и_регистрация_буркин"
+        mc:Ignorable="d"
+        Title="Window5" Height="450" Width="800">
+    <Grid>
+        <Image Margin="52,0,508,203" Source="Image17.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="52,234,0,0" TextWrapping="Wrap" Text="Платье " VerticalAlignment="Top" Width="102" FontSize="22" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="52,272,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" FontWeight="Bold" FontSize="24"><Run Text="Цена: "/><Run Text="2799"/><Run Text="₽"/></TextBlock>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Height="60" Margin="21,349,0,0" VerticalAlignment="Top" Width="197" Background="#FF020202" Foreground="White" ForceCursor="True" FontWeight="Bold" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Height="467" Margin="435,10,0,-58" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" FontSize="16" FontWeight="Bold"><Run Text="Описание"/><Run Text=":"/><LineBreak/><Run FontWeight="Normal" FontSize="14" Text="Базовое трикотажное платье из дышащего хлопка самого высокого качества. Ткань для платьев производится на заказ на одной из лучших фабрик в Турции и доставляется на наши производства в Москве. После пошива в Москве каждое из платьев проходит проверку на качество в 3 этапа. Платье имеет декоративную сборку по боковому шву и регулируемую длину на любой рост. Благодаря этому платье визуально корректирует силуэт и может подойти для повседневной носки, для делового гардероба и для вечернего выхода. Размерный ряд предусматривает маленькие и большие размеры. Наше платье может стать отличным подарком на любой праздник, будь то 8 марта, день рождение, последний звонок, выпускной или Новый год. Важно! В случае возникновения вопросов или проблем, смело обращайтесь в нaшy пoддepжкy (обратите внимание на этикетку с приветственным посланием), мы оперативно вам поможем."/></TextBlock>
+        <Image Margin="0,0,758,387" Source="Image20.png" Stretch="Fill"/>
+        <Button Content="" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="34" Background="Transparent" Click="Button_Click" BorderThickness="0"/>
+
+    </Grid>
+</Window>

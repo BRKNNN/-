@@ -1,0 +1,35 @@
+﻿<Window x:Class="авторизация_и_регистрация_буркин.Window8"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:авторизация_и_регистрация_буркин"
+        mc:Ignorable="d"
+        Title="Window8" Height="450" Width="800">
+    <Grid>
+        <Image Margin="14,11,626,262" Source="Image11.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Белая футболка" VerticalAlignment="Top" Margin="10,162,0,0" Width="134" FontWeight="Bold" FontSize="14" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93" Height="17"><Run Text=" "/><Run FontWeight="Bold" Text="1090₽"/></TextBlock>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Height="24" Margin="8,207,0,0" VerticalAlignment="Top" Width="136" Background="#FF020202" Foreground="White" ForceCursor="True" FontWeight="Bold" Click="Button_Click_1" RenderTransformOrigin="0.515,1.375"/>
+        <Image Margin="199,10,418,262" Source="Image23.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="199,162,0,0" Width="134" FontWeight="Bold" FontSize="14" Height="20"><Run Text="Чёрная"/><Run Text=" футболка"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="199,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93" Height="17"><Run Text=" "/><Run FontWeight="Bold" Text="1090₽"/></TextBlock>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Height="24" Margin="197,207,0,0" VerticalAlignment="Top" Width="136" Background="#FF020202" Foreground="White" ForceCursor="True" FontWeight="Bold" Click="Button_Click_1"/>
+        <Image Margin="404,11,208,262" Source="Image24.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="404,162,0,0" Width="134" FontWeight="Bold" FontSize="14" Height="20"><Run Text="Зелёная"/><Run Text=" футболка"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="404,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93" Height="17"><Run FontWeight="Bold" Text=" "/><Run FontWeight="Bold" Text="890"/><Run FontWeight="Bold" Text="₽"/></TextBlock>
+        <Button Content="Добавить в корзину" HorizontalAlignment="Left" Height="24" Margin="404,206,0,0" VerticalAlignment="Top" Width="136" Background="#FF020202" Foreground="White" ForceCursor="True" FontWeight="Bold" Click="Button_Click_1"/>
+        <Image Margin="736,0,-1,371" Source="Image25.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="179.615"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="" HorizontalAlignment="Left" Height="51" Margin="737,0,0,0" VerticalAlignment="Top" Width="55" Background="Transparent" BorderThickness="0" Click="Button_Click"/>
+
+    </Grid>
+</Window>

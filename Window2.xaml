@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="Window2" Height="654.739" Width="800">
     <Grid Margin="0,0,2,2">
-        <TextBox HorizontalAlignment="Center" Height="27" Margin="308,186,300,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182"/>
-        <TextBox HorizontalAlignment="Center" Height="23" Margin="308,283,300,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" TextChanged="TextBox_TextChanged"/>
-        <PasswordBox HorizontalAlignment="Center" Margin="308,236,300,0" VerticalAlignment="Top" Width="182" Height="28"/>
+        <Button Content="Вход" HorizontalAlignment="Left" Margin="700,30,0,0" VerticalAlignment="Top" Width="90" Height="33" Click="Button_Click_2" FontWeight="Bold" BorderBrush="White" BorderThickness="0" Background="Black" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>
+        <TextBox x:Name="emailbox" HorizontalAlignment="Center" Height="27" Margin="308,186,300,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" TextChanged="TextBox_TextChanged_2"/>
+        <TextBox x:Name="numberbox" HorizontalAlignment="Center" Height="23" Margin="308,283,300,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" TextChanged="TextBox_TextChanged"/>
+        <PasswordBox x:Name="passbox" HorizontalAlignment="Center" Margin="308,236,300,0" VerticalAlignment="Top" Width="182" Height="28"/>
 
-        <Button Content="Регистрация" HorizontalAlignment="Left" Margin="304,451,0,0" VerticalAlignment="Top" Width="186" Height="33" Click="Button_Click_1" FontWeight="Bold" BorderBrush="White" BorderThickness="0" Background="Black" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>
-
+        <Button Content="Зарегистрироваться как пользователь" HorizontalAlignment="Left" Margin="280,451,0,0" VerticalAlignment="Top" Width="267" Height="33" Click="Button_Click_1" FontWeight="Bold" BorderBrush="White" BorderThickness="0" Background="Black" Foreground="White" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>
+        <Button Content="Зарегистрироваться как администратор" HorizontalAlignment="Left" Margin="280,490,0,0" VerticalAlignment="Top" Width="267" Height="33" Click="Button_Click_3" FontWeight="Bold" BorderBrush="White" BorderThickness="0" Background="White" Foreground="Black" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>
         <StackPanel/>
         <CheckBox Content="Получать эксклюзивные предложения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308,402,0,0" Opacity="0.6"/>
         <CheckBox Content="Я согласен" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="308,422,0,0" Checked="CheckBox_Checked_1" Opacity="0.6"/>

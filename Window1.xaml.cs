@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Data;
 
 namespace авторизация_и_регистрация_буркин
 {
@@ -19,9 +22,16 @@ namespace авторизация_и_регистрация_буркин
     /// </summary>
     public partial class Window1 : Window
     {
-        public Window1()
+
+        String id;
+        string connectionString;
+
+        public Window1(String id = "")
         {
             InitializeComponent();
+            this.id = id;
+
+            connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -33,10 +43,10 @@ namespace авторизация_и_регистрация_буркин
         {
 
         }
-
+        
         private void TextBox_TextChanged_2(object sender, TextChangedEventArgs e)
         {
-            TextBox tb = new TextBox { Background = new SolidColorBrush(Colors.Transparent) };
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -46,14 +56,104 @@ namespace авторизация_и_регистрация_буркин
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Window3 frm = new Window3();
-            frm.Show();
-            Close();
+            string email = emailbox.Text.Trim();
+            string pass = passbox.Password.Trim();
+
+            SqlConnection connection = null;
+            try
+            {
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                String query = $"SELECT * FROM Users  WHERE UserNumber LIKE '{email}' AND UserPassword LIKE '{pass}'";
+                SqlCommand sqlCmd = new SqlCommand(query, connection);
+                sqlCmd.CommandType = CommandType.Text;
+                var result = sqlCmd.ExecuteReader();
+
+                if (result.HasRows)
+                {
+
+                    while (result.Read())
+                    {
+                        String id = result.GetValue(0).ToString();
+
+                        Window9 window9 = new Window9(id);
+                        window9.Show();
+                        Hide();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Пользователь не найден!");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+            }
+            finally
+            {
+                if (connection != null)
+                    connection.Close();
+            }
+
         }
 
         private void TextBox_TextChanged_3(object sender, TextChangedEventArgs e)
         {
 
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string email = emailbox.Text.Trim();
+            string pass = passbox.Password.Trim();
+
+            SqlConnection connection = null;
+            try
+            {
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                String query = $"SELECT * FROM Admins  WHERE AdminNumber LIKE '{email}' AND AdminPassword LIKE '{pass}'";
+                SqlCommand sqlCmd = new SqlCommand(query, connection);
+                sqlCmd.CommandType = CommandType.Text;
+                var result = sqlCmd.ExecuteReader();
+
+                if (result.HasRows)
+                {
+
+                    while (result.Read())
+                    {
+                        String id = result.GetValue(0).ToString();
+
+                        Window11 window11 = new Window11(id);
+                        window11.Show();
+                        Hide();
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Пользователь не найден!");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.StackTrace);
+            }
+            finally
+            {
+                if (connection != null)
+                    connection.Close();
+            }
+
+        }
+
+
     }
 }
+
